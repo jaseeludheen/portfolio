@@ -1,0 +1,78 @@
+.skills-section {
+  padding: 100px 5%;
+  background: #0d1117;
+}
+
+.skills-section__title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-top: 12px;
+  margin-bottom: 56px;
+}
+
+/* ── Skill list ── */
+.skills-section__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 14px 18px;
+  transition: border-color 0.2s;
+}
+.skill-item:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+.skill-item__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.skill-item__level {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: #6366f1;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  padding: 2px 8px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+}
+
+/* ── Tech badges ── */
+.skills-section__extras {
+  margin-top: 64px;
+}
+
+.skills-section__extras-label {
+  font-size: 12px;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.skills-section__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-section__badge {
+  background: #111827;
+  border: 1px solid #1e293b;
+  color: #64748b;
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 999px;
+}

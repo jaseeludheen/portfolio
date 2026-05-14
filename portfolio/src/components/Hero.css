@@ -1,0 +1,151 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 5% 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Background decorations ── */
+.hero__grid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(99, 102, 241, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.hero__glow {
+  position: absolute;
+  top: 20%;
+  right: 8%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* ── Content ── */
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+/* ── Status badge ── */
+.hero__status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.hero__status-dot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.hero__status-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+.hero__status-core {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.hero__status-text {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: #22c55e;
+  letter-spacing: 0.1em;
+}
+
+/* ── Name & title ── */
+.hero__name {
+  font-size: clamp(40px, 7vw, 80px);
+  font-weight: 700;
+  line-height: 1.05;
+  color: #f1f5f9;
+  margin-bottom: 8px;
+}
+
+.hero__title {
+  font-size: clamp(22px, 4vw, 42px);
+  font-weight: 300;
+  color: #6366f1;
+  font-style: italic;
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+/* ── Bio ── */
+.hero__bio {
+  font-size: 17px;
+  color: #94a3b8;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.hero__bio-highlight {
+  color: #c4b5fd;
+}
+
+/* ── CTA buttons ── */
+.hero__cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero__btn-outline {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  border-radius: 10px;
+  padding: 13px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+.hero__btn-outline:hover {
+  border-color: #6366f1;
+  color: #e2e8f0;
+}
+
+/* ── Stats ── */
+.hero__stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.hero__stat-number {
+  font-family: 'Space Mono', monospace;
+  font-size: 28px;
+  font-weight: 700;
+  color: #6366f1;
+}
+
+.hero__stat-label {
+  font-size: 12px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
